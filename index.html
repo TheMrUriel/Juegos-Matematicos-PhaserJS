@@ -4,16 +4,9 @@
     <meta charset="UTF-8" />
     <title>Juego de Sumas</title>
     <style>
-      html,
       body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
         background: #2d2d2d;
         font-family: Arial, sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       #game-container {
         display: flex;
@@ -22,11 +15,6 @@
         justify-content: center;
       }
 
-      @media (min-width: 425px) {
-        body.solo-movil #game-container {
-          zoom: 200%;
-        }
-      }
       input {
         font-size: 28px;
         padding: 10px 15px;
@@ -51,13 +39,5 @@
     <!-- Phaser CDN -->
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
     <script src="game.js"></script>
-    <script>
-      const isMobile = /Mobi|Android|iPhone|iPad|iPod/.test(
-        navigator.userAgent
-      );
-      if (isMobile) {
-        document.body.classList.add("solo-movil");
-      }
-    </script>
   </body>
 </html>
