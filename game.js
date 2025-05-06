@@ -3,7 +3,7 @@ const isPhone = window.innerWidth < 768;
 const config = {
   type: Phaser.AUTO,
   width: window.innerWidth,
-  height: window.innerHeight,
+  height: 600,
   backgroundColor: "#2d2d2d",
   parent: "game-container",
   dom: {
